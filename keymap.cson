@@ -1,0 +1,87 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * http://flight-manual.atom.io/using-atom/sections/basic-customization/#_customizing_keybindings
+# * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
+#
+# If you're having trouble with your keybindings not working, try the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
+# Debugging Guide for more information:
+# * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'body':
+  'cmd-k cmd-up': 'pane:split-up'
+  'cmd-k cmd-down': 'pane:split-down'
+  'cmd-k cmd-left': 'pane:split-left'
+  'cmd-k cmd-right': 'pane:split-right'
+  'ctrl-alt-cmd-up': 'window:focus-pane-above'
+  'ctrl-alt-cmd-down': 'window:focus-pane-below'
+  'ctrl-alt-cmd-left': 'window:focus-pane-on-left'
+  'ctrl-alt-cmd-right': 'window:focus-pane-on-right'
+  'cmd-k shift-up': 'window:move-active-item-to-pane-above'
+  'cmd-k shift-down': 'window:move-active-item-to-pane-below'
+  'cmd-k shift-left': 'window:move-active-item-to-pane-on-left'
+  'cmd-k shift-right': 'window:move-active-item-to-pane-on-right'
+
+'atom-text-editor':
+  'alt-cmd-r': 'editor:toggle-soft-wrap'
+
+'.platform-darwin atom-text-editor':
+  'ctrl-cmd-m': 'bracket-matcher:select-inside-brackets'
+  'cmd-shift-space':   'lisp-paredit:expand-selection'
+
+#########################
+# Proto REPL Clojure Mods
+#########################
+# Allows using enter to select an autocomplete suggestion.
+'.platform-darwin atom-text-editor[data-grammar~="clojure"].autocomplete-active':
+  'enter':          'autocomplete-plus:confirm'
+
+# '.platform-darwin atom-text-editor[data-grammar~="clojure"]':
+
+  # Indent the current selection
+  # 'cmd-i':          'lisp-paredit:indent'
+
+  # Expand the selection up a block
+  # 'ctrl-shift-m':   'lisp-paredit:expand-selection'
+
+  # Provides proper indentation when enter is pressed. (I disable normal lisp-paredit keybindings)
+  # 'enter':          'lisp-paredit:newline'
+
+  # Helpers for cutting, copying, pasting, deleting, and indenting a Clojure code
+  # 'cmd-shift-x':    'jason:cut-sexp'
+  # 'cmd-shift-c':    'jason:copy-sexp'
+  # 'cmd-shift-v':    'jason:paste-sexp'
+  # 'cmd-shift-delete': 'jason:delete-sexp'
+  # 'cmd-shift-d':    'jason:delete-sexp'
+  # 'cmd-shift-i':    'jason:indent-top-sexp'
+
+
+# Miscellaneous helpers. Less applicable to clojure code. (optional)
+'.platform-darwin atom-workspace atom-text-editor':
+  'ctrl-d': 'proto-repl:exit-repl'
+
+#############################
+# Proto REPL Clojure Mods End
+#############################

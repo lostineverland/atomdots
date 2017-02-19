@@ -1,0 +1,64 @@
+"*":
+  core:
+    packagesWithKeymapsDisabled: [
+      "lisp-paredit"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "solarized-light-syntax"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    invisibles: {}
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "747b5b94-d4f6-41ad-8fc3-915b7b3c93b3"
+  "git-plus":
+    commits:
+      verboseCommits: true
+  "highlight-selected":
+    highlightBackground: true
+    lightTheme: true
+  "lisp-paredit":
+    indentationForms: [
+      "try"
+      "catch"
+      "finally"
+      "let"
+      "are"
+      "/^def.*/"
+      "fn"
+      "cond"
+      "if"
+      "if-let"
+      "for"
+      "/when.*/"
+      "testing"
+      "doseq"
+      "dotimes"
+      "loop"
+      "ns"
+    ]
+    strict: false
+  "proto-repl":
+    autoPrettyPrint: true
+  "status-bar": {}
+  welcome:
+    showOnStartup: false
+".clojure.source":
+  "bracket-matcher":
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "\"\""
+      "“”"
+      "‘’"
+      "«»"
+      "‹›"
+    ]
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false
+    nonWordCharacters: "()\"':,;~@#$%^&{}[]`"
