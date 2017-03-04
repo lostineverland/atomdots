@@ -41,6 +41,8 @@
       "ns"
     ]
     strict: false
+  "project-manager":
+    alwaysOpenInSameWindow: true
   "proto-repl":
     autoPrettyPrint: true
   "status-bar": {}
