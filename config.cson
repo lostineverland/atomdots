@@ -1,5 +1,8 @@
 "*":
   core:
+    disabledPackages: [
+      "n-panes"
+    ]
     packagesWithKeymapsDisabled: [
       "lisp-paredit"
     ]
@@ -41,6 +44,21 @@
       "ns"
     ]
     strict: false
+  parinfer:
+    "file-extensions": [
+      ".boot"
+      ".cl"
+      ".clj"
+      ".cljc"
+      ".cljs"
+      ".edn"
+      ".el"
+      ".lfe"
+      ".lisp"
+      ".lsp"
+      ".rkt"
+      ".scm"
+    ]
   "project-manager":
     alwaysOpenInSameWindow: true
   "proto-repl":
