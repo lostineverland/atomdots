@@ -44,12 +44,11 @@
   'cmd-k shift-left': 'window:move-active-item-to-pane-on-left'
   'cmd-k shift-right': 'window:move-active-item-to-pane-on-right'
 
-'atom-text-editor':
-  'alt-cmd-r': 'editor:toggle-soft-wrap'
-
 '.platform-darwin atom-text-editor':
   'ctrl-cmd-m': 'bracket-matcher:select-inside-brackets'
   'cmd-shift-space':   'lisp-paredit:expand-selection'
+  'alt-cmd-r': 'editor:toggle-soft-wrap'
+  'cmd-d': 'user:multi-select'
 
 #########################
 # Proto REPL Clojure Mods

@@ -67,3 +67,11 @@ atom.commands.add 'atom-text-editor', 'jason:indent-top-sexp', ->
 # ****************************************
 # ********** Proto REPL End **************
 # ****************************************
+
+# Make cmd-d work like sublime where it also becomes the next search pattern
+# commands reference:
+#   https://atom.io/docs/api/v1.9.1/TextEditor#instance-selectWordsContainingCursors
+atom.commands.add 'atom-text-editor', 'user:multi-select', ->
+  editor = atom.workspace.getActiveTextEditor()
+  atom.commands.dispatch(atom.views.getView(editor), 'find-and-replace:select-next')
+  atom.commands.dispatch(atom.views.getView(editor), 'find-and-replace:use-selection-as-find-pattern')
