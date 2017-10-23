@@ -2,6 +2,7 @@
   core:
     disabledPackages: [
       "n-panes"
+      "sublime-word-navigation"
     ]
     packagesWithKeymapsDisabled: [
       "lisp-paredit"
@@ -10,6 +11,16 @@
     themes: [
       "one-light-ui"
       "solarized-light-syntax"
+    ]
+  "disable-keybindings":
+    allCommunityPackages: true
+    exceptCommunityPackages: [
+      "hey-pane"
+      "indentation-jumper"
+      "parinfer"
+      "project-manager"
+      "proto-repl"
+      "word-jumper"
     ]
   editor:
     autoIndentOnPaste: false

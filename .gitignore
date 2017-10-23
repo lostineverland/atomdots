@@ -7,3 +7,4 @@ storage
 .npm
 packages
 projects.cson
+node_modules
