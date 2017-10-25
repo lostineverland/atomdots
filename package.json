@@ -1,0 +1,26 @@
+{
+  "name": "atomdots",
+  "version": "1.0.0",
+  "description": "Configuration for the atom tedt editor",
+  "main": "init.js",
+  "dependencies": {
+    "atom-use-package": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostineverland/atomdots.git"
+  },
+  "keywords": [
+    "atom"
+  ],
+  "author": "lostineverland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostineverland/atomdots/issues"
+  },
+  "homepage": "https://github.com/lostineverland/atomdots#readme"
+}
