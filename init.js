@@ -35,17 +35,26 @@ usePackage("disable-keybindings", {
 //   enableKeys: false
 // }
 
-usePackage('Sublime-Style-Column-Selection', {enableKeys: false});
+usePackage('expand-region', {
+  keymap: {
+    '.platform-darwin atom-text-editor': {
+      'shift-cmd-space': 'expand-region:expand',
+      'shift-alt-space': 'expand-region:shrink'
+    }
+  },
+  enableKeys: false
+});
 usePackage('git-blame', {enableKeys: false});
 // usePackage('git-plus', {enableKeys: false});
 usePackage('hey-pane', {enableKeys: true});
 usePackage('highlight-selected', {enableKeys: false});
 usePackage('indentation-jumper', {enableKeys: true});
 usePackage('ink', {enableKeys: false});
-usePackage('lisp-paredit', {
+usePackage('lisp-paredit', {enableKeys: false});
+usePackage('markdown-fold', {
   keymap: {
-    '.platform-darwin atom-text-editor': {
-      'cmd-shift-space': 'lisp-paredit:expand-selection'
+    '.platform-darwin atom-text-editor[data-grammar="source gfm"]': {
+      'alt-cmd-{': 'markdown-fold:fold-all'
     }
   },
   enableKeys: false
@@ -55,5 +64,7 @@ usePackage('project-manager', {enableKeys: true});
 usePackage('proto-repl', {enableKeys: true});
 usePackage('proto-repl-charts', {enableKeys: false});
 usePackage('set-syntax', {enableKeys: false});
+usePackage('Sublime-Style-Column-Selection', {enableKeys: false});
+usePackage('tidy-markdown', {enableKeys: false});
 // usePackage('sublime-word-navigation', {enableKeys: false});
 usePackage('word-jumper', {enableKeys: true});
