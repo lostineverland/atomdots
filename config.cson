@@ -1,8 +1,6 @@
 "*":
   core:
     disabledPackages: [
-      "n-panes"
-      "sublime-word-navigation"
     ]
     packagesWithKeymapsDisabled: [
       "lisp-paredit"
