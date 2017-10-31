@@ -1,7 +1,5 @@
 "*":
   core:
-    disabledPackages: [
-    ]
     packagesWithKeymapsDisabled: [
       "lisp-paredit"
     ]

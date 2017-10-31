@@ -45,6 +45,7 @@ usePackage('expand-region', {
   enableKeys: false
 });
 usePackage('git-blame', {enableKeys: false});
+usePackage('git-log', {enableKeys: false});
 // usePackage('git-plus', {enableKeys: false});
 usePackage('hey-pane', {enableKeys: true});
 usePackage('highlight-selected', {enableKeys: false});
