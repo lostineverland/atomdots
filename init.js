@@ -64,6 +64,7 @@ usePackage('parinfer', {enableKeys: true});
 usePackage('project-manager', {enableKeys: true});
 usePackage('proto-repl', {enableKeys: true});
 usePackage('proto-repl-charts', {enableKeys: false});
+usePackage('rester', {enableKeys: false});
 usePackage('set-syntax', {enableKeys: false});
 usePackage('Sublime-Style-Column-Selection', {enableKeys: false});
 usePackage('tidy-markdown', {enableKeys: false});
